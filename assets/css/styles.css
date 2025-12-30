@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --yellow-100: hsl(31, 66%, 93%);
+  --yellow-500: hsl(39, 100%, 71%);
+  --purple-100: hsl(254, 88%, 90%);
+  --purple-500: hsl(256, 67%, 59%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 7%);
+  --font-weight-500: 500;
+  --font-weight-400: 400;
+  --md-text-size: 2rem;
+  --lg-text-size: 2.75rem;
+  --sm-text-size: 1.5rem;
+  --padding-item: 2rem;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  padding: 2rem;
+  font-size: 18px;
+  min-height: 100vh;
+  color: var(--black);
+  font-weight: var(--font-weight-400);
+  background-color: #f5f5f5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.lg-text {
+  font-size: var(--lg-text-size);
+  font-weight: var(--font-weight-500);
+}
+.md-text {
+  font-size: var(--md-text-size);
+  font-weight: 500;
+}
+.sm-text {
+  font-size: var(--sm-text-size);
+}
+.text-yellow {
+  color: var(--yellow-500);
+}
+.text-purple {
+  color: var(--purple-500);
+}
+.grid-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  width: min(95%, 1400px);
+  margin-inline: auto;
+}
+.grid-items {
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow: hidden;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*UI LAYOUT*/
+.social {
+  background-color: var(--purple-500);
+  color: var(--white);
+  text-align: center;
+  img {
+    margin: 0 auto;
+    width: 300px;
+  }
+}
+.manage {
+  background-color: var(--white);
+  img {
+    width: 100%;
+  }
+}
+.posting {
+  background-color: var(--yellow-500);
+  padding-bottom: 0;
+  img {
+    width: 250px;
+  }
+}
+.schedule {
+  background-color: var(--purple-100);
+
+  text-align: center;
+  img {
+    margin: 0 auto;
+  }
+}
+.followers {
+  background-color: var(--purple-500);
+  color: var(--white);
+  text-align: center;
+  img {
+    margin: 0 auto;
+    width: 300px;
+  }
+}
+.audience {
+  background-color: var(--white);
+  span {
+    display: block;
+    font-size: 18px;
+  }
+  img {
+    width: 250px;
+  }
+}
+.create {
+  background-color: var(--yellow-100);
+  img {
+    width: 250px;
+  }
+}
+.content {
+  background-color: var(--yellow-500);
+}
