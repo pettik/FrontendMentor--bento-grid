@@ -20,7 +20,7 @@
 }
 
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   padding: 2rem;
   font-size: 18px;
   min-height: 100vh;
@@ -58,7 +58,7 @@ img {
   width: min(95%, 1400px);
   margin-inline: auto;
 }
-.grid-items {
+.grid-item {
   padding: 2rem;
   border-radius: 1rem;
   display: flex;
@@ -126,4 +126,15 @@ img {
 }
 .content {
   background-color: var(--yellow-500);
+}
+
+@media screen and (min-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "create social"
+      "manage posting"
+      "content schedule "
+      "audience followers";
+  }
 }
