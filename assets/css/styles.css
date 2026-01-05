@@ -20,7 +20,7 @@
 }
 
 body {
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   padding: 2rem;
   font-size: 18px;
   min-height: 100vh;
@@ -132,9 +132,41 @@ img {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-      "create social"
-      "manage posting"
-      "content schedule "
-      "audience followers";
+      'create social'
+      'manage posting'
+      'content schedule '
+      'audience followers';
+  }
+
+  .create {
+    grid-area: create;
+  }
+
+  .social {
+    grid-area: social;
+  }
+
+  .manage {
+    grid-area: manage;
+  }
+
+  .posting {
+    grid-area: posting;
+  }
+
+  .content {
+    grid-area: content;
+  }
+
+  .schedule {
+    grid-area: schedule;
+  }
+
+  .audience {
+    grid-area: audience;
+  }
+
+  .followers {
+    grid-area: followers;
   }
 }
