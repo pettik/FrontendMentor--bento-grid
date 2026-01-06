@@ -20,7 +20,7 @@
 }
 
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   padding: 2rem;
   font-size: 18px;
   min-height: 100vh;
@@ -73,57 +73,70 @@ img {
   background-color: var(--purple-500);
   color: var(--white);
   text-align: center;
-  img {
-    margin: 0 auto;
-    width: 300px;
-  }
+}
+
+.social img {
+  margin: 0 auto;
+  width: 300px;
 }
 .manage {
   background-color: var(--white);
-  img {
-    width: 100%;
-  }
 }
+
+.manage img {
+  width: 100%;
+}
+
 .posting {
   background-color: var(--yellow-500);
   padding-bottom: 0;
-  img {
-    width: 250px;
-  }
 }
+
+.posting img {
+  width: 250px;
+}
+
 .schedule {
   background-color: var(--purple-100);
-
   text-align: center;
-  img {
-    margin: 0 auto;
-  }
 }
+
+.schedule img {
+  margin: 0 auto;
+}
+
 .followers {
   background-color: var(--purple-500);
   color: var(--white);
   text-align: center;
-  img {
-    margin: 0 auto;
-    width: 300px;
-  }
 }
+
+.followers img {
+  margin: 0 auto;
+  width: 300px;
+}
+
 .audience {
   background-color: var(--white);
-  span {
-    display: block;
-    font-size: 18px;
-  }
-  img {
-    width: 250px;
-  }
 }
+
+.audience span {
+  display: block;
+  font-size: 18px;
+}
+
+.audience img {
+  width: 250px;
+}
+
 .create {
   background-color: var(--yellow-100);
-  img {
-    width: 250px;
-  }
 }
+
+.create img {
+  width: 250px;
+}
+
 .content {
   background-color: var(--yellow-500);
 }
@@ -132,10 +145,10 @@ img {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-      'create social'
-      'manage posting'
-      'content schedule '
-      'audience followers';
+      "create social"
+      "manage posting"
+      "content schedule "
+      "audience followers";
   }
 
   .create {
@@ -175,10 +188,10 @@ img {
   .grid-container {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
-      'create social social schedule'
-      'create manage posting schedule'
-      'content manage posting schedule'
-      'content audience followers ';
+      "create social social schedule"
+      "create manage posting schedule"
+      "content manage posting schedule"
+      "content audience followers ";
     grid-template-rows: 1fr 50px 0.7fr;
   }
 }
