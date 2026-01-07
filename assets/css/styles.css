@@ -191,7 +191,47 @@ img {
       "create social social schedule"
       "create manage posting schedule"
       "content manage posting schedule"
-      "content audience followers ";
+      "content audience followers followers";
     grid-template-rows: 1fr 50px 0.7fr;
+  }
+
+  .social {
+    grid-area: social;
+  }
+  .create {
+    grid-area: create;
+  }
+  .content {
+    grid-area: content;
+  }
+  .manage {
+    grid-area: manage;
+  }
+
+  /* .manage img {
+    position: relative;
+    left: 50%;
+  } */
+
+  .audience {
+    grid-area: audience;
+  }
+  .followers {
+    grid-area: followers;
+    flex-direction: row;
+    align-items: center;
+    text-align: start;
+  }
+  .schedule {
+    grid-area: schedule;
+  }
+
+  .schedule img {
+    position: relative;
+    left: 25%;
+    max-width: 350px;
+  }
+  .posting {
+    grid-area: posting;
   }
 }
