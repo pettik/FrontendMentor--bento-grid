@@ -58,6 +58,12 @@ Build a responsive "bento grid" layout based on the designs in the `design/` dir
 
 ---
 
+## Live
+
+- [Live preview] (https://pettik-bento-grid.netlify.app)
+
+---
+
 ## Author
 
 - Petr Bednarski — [GitHub profile] (https://github.com/pettik)
