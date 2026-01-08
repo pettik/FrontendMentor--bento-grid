@@ -1,77 +1,77 @@
-# Bento grid — hotové řešení 🎉
+# Bento Grid — Completed solution 🎉
 
-![Náhled designu pro Bento grid](./preview.jpg)
+![Design preview for Bento grid](./preview.jpg)
 
-## Vítejte 👋
+## Welcome 👋
 
-Tento projekt je dokončené řešení výzvy **Bento grid** z Frontend Mentor. Cílem bylo co nejvěrněji napodobit zadaný design pomocí čistého HTML a CSS (bez JS).
+This project is the completed solution to the **Bento grid** challenge from Frontend Mentor. The goal was to reproduce the provided design as closely as possible using plain HTML and CSS (no JavaScript).
 
-**Hlavní technologie:** `HTML`, `CSS` (BEM metodika byla použita u tříd)
+**Main technologies:** `HTML`, `CSS` (BEM methodology used for class naming)
 
 ---
 
-## Přehled projektu
+## Project overview
 
-### Co je cílem
+### Goal
 
-Vytvořit responzivní rozložení "bento grid" podle návrhu v adresáři `design/` tak, aby se chovalo správně na mobilu i desktopu (včetně umístění jednotlivých komponent při změně šířky obrazovky).
+Build a responsive "bento grid" layout based on the designs in the `design/` directory so that it behaves correctly on both mobile and desktop (including the placement of components when the screen width changes).
 
-### Očekávané chování
+### Expected behaviour
 
-- Optimalizované zobrazení podle velikosti obrazovky
-- Na mobilu jsou dvě komponenty, které jsou na desktopu v levém sloupci, posunuté dolů (procvičení umisťování prvků v CSS Grid)
-- Viditelné hover a focus stavy pro interaktivní prvky
+- Layout adapts to different screen sizes
+- Two components that appear in the left column on desktop are moved down on mobile (practice with CSS Grid placement)
+- Visible hover and focus states for interactive elements
 
 ---
 
 ## Screenshot
 
-<img src="./design/site-preview.JPG" alt="Náhled hotového řešení" />
+<img src="./design/site-preview.JPG" alt="Preview of the finished solution" />
 
 ---
 
-## Jak spustit lokálně 🔧
+## How to run locally 🔧
 
-1. Klonujte repo nebo stáhněte soubory.
-2. Otevřete `index.html` v prohlížeči (nebo použijte Live Server ve VS Code pro automatické reloady).
+1. Clone the repository or download the files.
+2. Open `index.html` in your browser (or use Live Server in VS Code for auto-reload).
 
-> Tip: Pro kontrolu responsivity používejte devtools v prohlížeči (Toggle device toolbar).
-
----
-
-## Kde najdete zdroje a odkazy 🔗
-
-- **Designy:** `./design` (obsahuje mobilní i desktop verzi JPG)
-- **Assety:** `./assets` (fonty, obrázky a styly)
-- **Stylový průvodce:** `style-guide.md`
-
-- **Solution URL:** (doplňte URL repozitáře)
-- **Live Site URL:** (doplňte nasazenou stránku, pokud máte)
+> Tip: Use the browser devtools (Toggle device toolbar) to test responsiveness.
 
 ---
 
-## Co jsem procvičil / Poznatky ✅
+## Resources & links 🔗
 
-- Responzivní layouty s CSS Grid a Flexbox
-- Precizní práce s mezerníky, velikostmi a typografií podle návrhu
-- Použití BEM pro čitelnou strukturu tříd
+- **Design files:** `./design` (contains mobile and desktop JPGs)
+- **Assets:** `./assets` (fonts, images and styles)
+- **Style guide:** `style-guide.md`
 
----
-
-## Autor
-
-- Petr Bednarski — [GitHub profile] (doplňte svůj GitHub nebo osobní stránku)
+- **Solution URL:** (add your repository URL)
+- **Live Site URL:** (add deployed site URL if available)
 
 ---
 
-## Změny a návrhy
+## What I practiced / Takeaways ✅
 
-Pokud chcete, mohu:
-
-- doplnit `Solution URL` a `Live Site URL`,
-- přidat krátký popis použitých CSS rozhodnutí,
-- nebo vytvořit preview GIF pro README.
+- Responsive layouts with CSS Grid and Flexbox
+- Precise spacing, sizing and typography to match the design
+- Using BEM for clear and maintainable class naming
 
 ---
 
-**Děkuji za prohlídku!** 🚀
+## Author
+
+- Petr Bednarski — [GitHub profile] (https://github.com/pettik)
+
+---
+
+## Changes & suggestions
+
+If you'd like, I can:
+
+- add the `Solution URL` and `Live Site URL`,
+- add a short note about specific CSS decisions I made,
+- or create a preview GIF for the README.
+
+---
+
+**Thanks for checking it out!** 🚀
