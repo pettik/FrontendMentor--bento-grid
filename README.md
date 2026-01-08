@@ -1,4 +1,4 @@
-# Bento Grid — Completed solution 🎉
+# FrontendMentor - Bento Grid challenge
 
 ![Design preview for Bento grid](./preview.jpg)
 
@@ -60,13 +60,13 @@ Build a responsive "bento grid" layout based on the designs in the `design/` dir
 
 ## Live
 
-- [Live preview] (https://pettik-bento-grid.netlify.app)
+- Site - [Live preview] (https://pettik-bento-grid.netlify.app)
 
 ---
 
 ## Author
 
-- Petr Bednarski — [GitHub profile] (https://github.com/pettik)
+- pettik — [GitHub profile] (https://github.com/pettik)
 
 ---
 
