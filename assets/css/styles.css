@@ -204,7 +204,7 @@ img {
   :root {
     --md-text-size: 2.25rem;
     --lg-text-size: 3.7rem;
-    --sm-text-size: 1.75rem;
+    --sm-text-size: 1.22rem;
   }
 
   .template {
@@ -233,9 +233,17 @@ img {
     grid-template-rows: 1fr 50px 0.7fr;
   }
 
+  .sm-text {
+    letter-spacing: -1.2px;
+  }
+
   .social {
     grid-area: social;
     padding-top: 3.9rem;
+  }
+
+  .social img {
+    width: 193px;
   }
 
   .text-yellow {
