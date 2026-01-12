@@ -258,6 +258,7 @@ img {
 
   .create {
     padding-top: 4.9rem;
+    padding-bottom: 4.9rem;
     grid-area: create;
   }
   .content {
