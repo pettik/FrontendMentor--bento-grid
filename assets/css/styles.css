@@ -203,8 +203,9 @@ img {
 @media screen and (min-width: 1200px) {
   :root {
     --md-text-size: 2.25rem;
+    --middle-sm-text-size: 2.1rem;
     --lg-text-size: 3.7rem;
-    --sm-text-size: 1.22rem;
+    --sm-text-size: 1.25rem;
   }
 
   .template {
@@ -283,14 +284,26 @@ img {
     text-align: start;
   }
   .schedule {
+    padding-top: 3rem;
     grid-area: schedule;
+    text-align: left;
+  }
+
+  .schedule p.middle-sm-text-size {
+    font-size: var(--middle-sm-text-size);
+    margin-left: -1.7rem;
+    text-align: center;
+    line-height: 0.9;
+    margin-bottom: 0.8rem;
   }
 
   .schedule img {
     position: relative;
-    left: 25%;
+    left: 2%;
     max-width: 350px;
+    margin-bottom: 0.75rem;
   }
+
   .posting {
     grid-area: posting;
   }
