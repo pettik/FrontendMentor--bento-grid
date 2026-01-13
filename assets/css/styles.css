@@ -97,6 +97,7 @@ img {
 }
 
 .manage img {
+  max-width: 19rem;
   width: 100%;
 }
 
@@ -238,6 +239,10 @@ img {
     letter-spacing: -1.2px;
   }
 
+  .middle-sm-text-size {
+    font-size: var(--middle-sm-text-size);
+  }
+
   .social {
     grid-area: social;
     padding-top: 3.9rem;
@@ -266,13 +271,20 @@ img {
     grid-area: content;
   }
   .manage {
+    line-height: 0.9;
     grid-area: manage;
-  }
-
-  /* .manage img {
+    padding-top: 1.4rem;
+    padding-bottom: 0;
     position: relative;
-    left: 50%;
-  } */
+  }
+  .manage img {
+    position: static;
+    max-width: none;
+    width: 160%;
+    margin-left: -1rem;
+    margin-top: -0.2rem;
+    align-self: flex-start;
+  }
 
   .audience {
     grid-area: audience;
@@ -290,7 +302,6 @@ img {
   }
 
   .schedule p.middle-sm-text-size {
-    font-size: var(--middle-sm-text-size);
     margin-left: -1.7rem;
     text-align: center;
     line-height: 0.9;
