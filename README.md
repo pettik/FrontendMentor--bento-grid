@@ -1,6 +1,6 @@
 # Bento Grid — Frontend Mentor Challenge
 
-![Preview](./design/preview.jpg)
+![Preview](./design/site-preview.JPG)
 
 🌐 [Live demo] (https://pettik-bento-grid.netlify.app)  
 🧑‍💻 Author: [pettik](https://github.com/pettik)
