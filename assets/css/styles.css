@@ -8,10 +8,12 @@
   --off-white: hsl(0, 0%, 96%);
 
   --fs-reg: 1.25rem;
-
   --fs-md: 2.25rem;
   --fs-lg: 3rem;
   --fs-xl: 4rem;
+  --space-sm: 1rem; /* 16px */
+  --space-md: 1.5rem; /* 24px */
+  --space-lg: 2rem; /* 32px */
 }
 
 @layer reset {
@@ -58,7 +60,7 @@
   }
 
   body {
-    margin: 32px;
+    margin: var(--space-lg);
     color: var(--black);
     font-size: var(--fs-reg);
     background: var(--off-white);
@@ -83,7 +85,7 @@
 @layer layout {
   .bento-grid {
     display: grid;
-    gap: 24px;
+    gap: var(--space-md);
     margin-inline: auto;
     max-inline-size: 1200px;
     grid-template-areas:
@@ -118,7 +120,7 @@
     color: var(--bento-card-foreground, var(--black));
     background-color: var(--bento-card-surface, var(--white));
     padding: var(--bento-card-padding, 32px);
-    border-radius: var(--bento-card-border-radius, 21px);
+    border-radius: var(--bento-card-border-radius, var(----fs-reg));
 
     overflow: clip;
 
@@ -145,7 +147,7 @@
     --bento-card-padding: 48px;
     --bento-card-horizontal-aligment: center;
     --bento-card-image-width: 70%;
-    --bento-card-gap: 16px;
+    --bento-card-gap: var(--space-sm);
 
     @media (width > 960px) {
       --bento-card-image-width: 45%;
@@ -204,7 +206,7 @@
     --bento-card-image-order: -1;
 
     @media (width > 960px) {
-      --bento-card-gap: 16px;
+      --bento-card-gap: var(--space-sm);
       --bento-card-image-width: 100%;
       --bento-card-vertical-aligment: center;
       --bento-card-horizontal-aligment: start;
