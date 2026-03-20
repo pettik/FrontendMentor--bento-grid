@@ -171,7 +171,9 @@
 
     /* fixing shadow issue in asset */
     > img {
-      border-radius: 100vw;
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      object-fit: cover;
       filter: drop-shadow(0 0 1rem hsl(0 0% 0% / 0.25));
       /* box-shadow: 0 0 1rem hsl(0 0% 0%); */
     }
