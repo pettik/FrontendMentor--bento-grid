@@ -180,15 +180,23 @@
   .bento-grid > :nth-child(3) {
     grid-area: three;
     --bento-card-surface: var(--accent-base);
+    padding-bottom: 3.5rem;
+    overflow: visible;
+  }
 
-    > img {
-      --bento-card-image-width: 75%;
-      margin-bottom: -55px;
+  .bento-grid > :nth-child(3) > img {
+    --bento-card-image-width: 75%;
+    transform: translateY(3.5rem);
+  }
 
-      @media (width > 960px) {
-        --bento-card-image-width: 100%;
-        margin-bottom: -125px;
-      }
+  @media (min-width: 60rem) {
+    .bento-grid > :nth-child(3) {
+      padding-bottom: 7.5rem;
+    }
+
+    .bento-grid > :nth-child(3) > img {
+      --bento-card-image-width: 100%;
+      transform: translateY(7.5rem);
     }
   }
 
