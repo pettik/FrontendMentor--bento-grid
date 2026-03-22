@@ -7,6 +7,8 @@
   --black: hsl(0, 0%, 7%);
   --off-white: hsl(0, 0%, 96%);
 
+  --card-offset: 3.5rem;
+  --card-2x-offset: 7.5rem;
   --fs-reg: 1.25rem;
   --fs-md: 2.25rem;
   --fs-lg: 3rem;
@@ -182,23 +184,23 @@
   .bento-grid > :nth-child(3) {
     grid-area: three;
     --bento-card-surface: var(--accent-base);
-    padding-bottom: 3.5rem;
+    padding-bottom: var(--card-offset);
     overflow: visible;
   }
 
   .bento-grid > :nth-child(3) > img {
     --bento-card-image-width: 75%;
-    transform: translateY(3.5rem);
+    transform: translateY(var(--card-offset));
   }
 
   @media (min-width: 60rem) {
     .bento-grid > :nth-child(3) {
-      padding-bottom: 7.5rem;
+      padding-bottom: var(--card-2x-offset);
     }
 
     .bento-grid > :nth-child(3) > img {
       --bento-card-image-width: 100%;
-      transform: translateY(7.5rem);
+      transform: translateY(var(--card-2x-offset));
     }
   }
 
@@ -280,7 +282,7 @@
   inline-size: 1px;
   block-size: 1px;
   padding: 0;
-  margin: -1px;
+  margin: -0.0625rem;
   overflow: hidden;
   clip-path: inset(50%);
   white-space: nowrap;
