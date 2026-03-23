@@ -7,8 +7,7 @@
   --black: hsl(0, 0%, 7%);
   --off-white: hsl(0, 0%, 96%);
 
-  --card-offset: 3.5rem;
-  --card-2x-offset: 7.5rem;
+  --radius-md: 1.25rem;
   --fs-reg: 1.25rem;
   --fs-md: 2.25rem;
   --fs-lg: 3rem;
@@ -58,7 +57,7 @@
 
 @layer base {
   html {
-    font-family: 'DM Sans', sans-serif;
+    font-family: "DM Sans", sans-serif;
     line-height: 1.4;
   }
 
@@ -98,30 +97,30 @@
     margin-inline: auto;
     max-inline-size: 1200px;
     grid-template-areas:
-      'one'
-      'two'
-      'three'
-      'four'
-      'five'
-      'six'
-      'seven'
-      'eight';
+      "one"
+      "two"
+      "three"
+      "four"
+      "five"
+      "six"
+      "seven"
+      "eight";
 
     @media (width > 660px) {
       grid-template-areas:
-        'one one'
-        'two three'
-        'four six'
-        'four seven'
-        'five eight';
+        "one one"
+        "two three"
+        "four six"
+        "four seven"
+        "five eight";
     }
 
     @media (width > 960px) {
       grid-template-areas:
-        'seven one one four'
-        'seven two three four'
-        'eight two three four'
-        'eight six five five';
+        "seven one one four"
+        "seven two three four"
+        "eight two three four"
+        "eight six five five";
     }
   }
 
@@ -129,9 +128,8 @@
     color: var(--bento-card-foreground, var(--black));
     background-color: var(--bento-card-surface, var(--white));
     padding: var(--bento-card-padding, var(--space-lg));
-    border-radius: var(--bento-card-border-radius, var(--fs-reg));
-
-    overflow: clip;
+    border-radius: var(--bento-card-border-radius, var(--radius-md));
+    overflow: hidden;
 
     display: grid;
     gap: var(--bento-card-gap, var(--space-lg));
@@ -141,13 +139,18 @@
     text-align: var(--bento-card-horizontal-alignment, start);
   }
 
+  @supports (overflow: clip) {
+    .bento-grid > * {
+      overflow: clip;
+    }
+  }
+
   .bento-grid > * img {
-    max-width: var(--bento-card-image-width, 100%);
     width: var(--bento-card-image-width, 100%);
     order: var(--bento-card-image-order);
   }
 
-  .bento-grid > :nth-child(1) {
+  .card--hero {
     grid-area: one;
     --heading-font-size: var(--fs-xl);
     --heading-span-foreground: var(--accent-base);
@@ -163,7 +166,7 @@
     }
   }
 
-  .bento-grid > :nth-child(2) {
+  .card--platforms {
     grid-area: two;
     --bento-card-image-order: -1;
 
@@ -181,30 +184,32 @@
     }
   }
 
-  .bento-grid > :nth-child(3) {
+  .card--posting {
+    --card-offset: 3.5rem;
     grid-area: three;
     --bento-card-surface: var(--accent-base);
     padding-bottom: var(--card-offset);
     overflow: visible;
   }
 
-  .bento-grid > :nth-child(3) > img {
+  .card--posting > img {
     --bento-card-image-width: 75%;
     transform: translateY(var(--card-offset));
   }
 
   @media (min-width: 60rem) {
-    .bento-grid > :nth-child(3) {
-      padding-bottom: var(--card-2x-offset);
+    .card--posting {
+      --card-offset: 7.5rem;
+      padding-bottom: var(--card-offset);
     }
 
-    .bento-grid > :nth-child(3) > img {
+    .card--posting > img {
       --bento-card-image-width: 100%;
-      transform: translateY(var(--card-2x-offset));
+      transform: translateY(var(--card-offset));
     }
   }
 
-  .bento-grid > :nth-child(4) {
+  .card--schedule {
     grid-area: four;
     --bento-card-horizontal-alignment: center;
     --bento-card-surface: var(--primary-subdued);
@@ -216,7 +221,7 @@
     }
   }
 
-  .bento-grid > :nth-child(5) {
+  .card--followers {
     grid-area: five;
     --bento-card-horizontal-alignment: center;
     --bento-card-foreground: var(--white);
@@ -233,7 +238,7 @@
     }
   }
 
-  .bento-grid > :nth-child(6) {
+  .card--growth {
     grid-area: six;
     --heading-font-size: var(--fs-xl);
     --heading-span-display: block;
@@ -246,7 +251,7 @@
     }
   }
 
-  .bento-grid > :nth-child(7) {
+  .card--create {
     grid-area: seven;
     --heading-span-foreground: var(--primary-base);
     --heading-span-style: italic;
@@ -260,7 +265,7 @@
     }
   }
 
-  .bento-grid > :nth-child(8) {
+  .card--ai {
     grid-area: eight;
     --bento-card-surface: var(--accent-base);
     --bento-card-image-width: 60%;
