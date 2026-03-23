@@ -15,7 +15,7 @@
   --space-sm: 1rem; /* 16px */
   --space-md: 1.5rem; /* 24px */
   --space-lg: 2rem; /* 32px */
-  --space-xlg: 3rem; /* 32px */
+  --space-xlg: 3rem; /* 48px */
 }
 
 @layer reset {
@@ -106,7 +106,8 @@
       "seven"
       "eight";
 
-    @media (width > 660px) {
+    @media (min-width: 41.25rem) {
+      /* 660px */
       grid-template-areas:
         "one one"
         "two three"
@@ -115,7 +116,8 @@
         "five eight";
     }
 
-    @media (width > 960px) {
+    @media (min-width: 60rem) {
+      /* 960px */
       grid-template-areas:
         "seven one one four"
         "seven two three four"
@@ -147,7 +149,7 @@
 
   .bento-grid > * img {
     width: var(--bento-card-image-width, 100%);
-    order: var(--bento-card-image-order);
+    order: var(--bento-card-image-order, 0);
   }
 
   .card--hero {
@@ -161,7 +163,8 @@
     --bento-card-image-width: 70%;
     --bento-card-gap: var(--space-sm);
 
-    @media (width > 960px) {
+    @media (min-width: 60rem) {
+      /* 960px */
       --bento-card-image-width: 45%;
     }
   }
@@ -170,7 +173,8 @@
     grid-area: two;
     --bento-card-image-order: -1;
 
-    @media (width > 960px) {
+    @media (min-width: 60rem) {
+      /* 960px */
       --bento-card-image-width: 150%;
     }
 
@@ -213,7 +217,8 @@
     --bento-card-horizontal-alignment: center;
     --bento-card-surface: var(--primary-subdued);
 
-    @media (width > 960px) {
+    @media (min-width: 60rem) {
+      /* 960px */
       --bento-card-image-width: 175%;
       --bento-card-vertical-alignment: center;
       --bento-card-horizontal-alignment: start;
@@ -228,7 +233,8 @@
     --bento-card-image-width: 75%;
     --bento-card-image-order: -1;
 
-    @media (width > 960px) {
+    @media (min-width: 60rem) {
+      /* 960px */
       --bento-card-gap: var(--space-sm);
       --bento-card-image-width: 100%;
       --bento-card-vertical-alignment: center;
@@ -245,7 +251,8 @@
 
     --bento-card-image-width: 60%;
 
-    @media (width > 960px) {
+    @media (min-width: 60rem) {
+      /* 960px */
       --bento-card-image-width: 100%;
     }
   }
@@ -258,7 +265,8 @@
     --bento-card-surface: var(--accent-subdued);
     --bento-card-image-width: 60%;
 
-    @media (width > 960px) {
+    @media (min-width: 60rem) {
+      /* 960px */
       --bento-card-image-width: 100%;
       --bento-card-vertical-alignment: center;
     }
@@ -269,7 +277,8 @@
     --bento-card-surface: var(--accent-base);
     --bento-card-image-width: 60%;
 
-    @media (width > 960px) {
+    @media (min-width: 60rem) {
+      /* 960px */
       --bento-card-image-width: 105%;
     }
   }
